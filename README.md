@@ -32,8 +32,8 @@ Getting started with Markdown
 
 # Titles 
 
-- [Titles 1](#titles 1)
-- [Titles 2](#titles 2)
+- [Titles 1](###titles 1)
+- [Titles 2](###titles 2)
 
 	Title 1
 	========================
