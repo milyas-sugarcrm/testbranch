@@ -46,9 +46,10 @@ Code guidelines are followed and JavaScript coding standards applied:
 
 # Project Testing Standards
 
+Project functionalities are tested using the following frameworks:
 * Selenium [WebDriver](https://www.selenium.dev/documentation/webdriver/)
 * Mocha [mochajs](https://mochajs.org/)
 
 # Deployment
 
-Using Git to deploy on the servers.
+Code is maintained on Git and is deployed on the servers.
