@@ -1,5 +1,9 @@
-CJ Mobile
+Addoptify Customer Journey Mobile Plugin®
 =============================
+
+Copyright (C) Addoptify ApS. All rights reserved.
+
+# Architecture of the Source Code
 
 - :file_folder: **config**
 - :open_file_folder: **custom**
@@ -29,4 +33,22 @@ CJ Mobile
 		- :clipboard: userCache.js
 - :open_file_folder: **tests**
 	- :clipboard: CJ.js
-    		
+
+# Developer Environment Standup
+
+* To setup the Mobile project: 
+    [Mobile SDK Quick Start Guide](https://support.sugarcrm.com/Documentation/Mobile_Solutions/Mobile_SDK/Mobile_SDK_Quick_Start_Guide/)
+
+# Project Coding Standards
+
+Code guidelines are followed and JavaScript coding standards applied:
+[JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript)
+
+# Project Testing Standards
+
+* Selenium [WebDriver](https://www.selenium.dev/documentation/webdriver/)
+* Mocha [mochajs](https://mochajs.org/)
+
+# Deployment
+
+Using Git to deploy on the servers.
