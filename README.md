@@ -1,7 +1,7 @@
 Addoptify Customer Journey Mobile Plugin®
 =============================
 
-Copyright (C) Addoptify ApS. All rights reserved.
+Copyright (C) Addoptify. All rights reserved.
 
 # Architecture of the Source Code
 
