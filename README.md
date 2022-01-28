@@ -1,95 +1,36 @@
+Addoptify Customer Journey Mobile Plugin®
+=============================
+
+Copyright (C) Addoptify. All rights reserved.
+
 # Architecture of the Source Code
 
-- :open_file_folder: **src**
-	- :open_file_folder: **custom**
-		- :open_file_folder: **clients**
-			- :open_file_folder: **base**
-				- :open_file_folder: **fields**
-					- :file_folder: **cj_fieldset_for_date_in_populate_fields**
-					- :file_folder: **cj_momentum_bar**
-					- :file_folder: **cj_populate_fields**
-					- :file_folder: **cj_progress_bar**
-					- :file_folder: **cj_select_to**
-					- :file_folder: **cj_time**
-					- :file_folder: **cj_widget_config_toggle_field**
-				- :open_file_folder: **layouts**
-					- :file_folder: **dri-workflows**
-					- :file_folder: **dri-workflows-widget-configuration**
-				- :open_file_folder: **views**
-					- :file_folder: **cj-as-a-dashlet**
-					- :file_folder: **cj-webhook-dashlet**
-					- :file_folder: **dri-customer-journey-dashlet**
-					- :file_folder: **dri-customer-journey-momentum-dashlet**
-					- :file_folder: **dri-license-errors**
-					- :file_folder: **dri-workflow**
-					- :file_folder: **dri-workflows-header**
-					- :file_folder: **dri-workflows-widget-configuration**
-		- :open_file_folder: **data**
-			- :open_file_folder: **acl**
-				- :clipboard: SugarACLCustomerJourney.php
-		- :file_folder: **Extension**
-		- :open_file_folder: **include**
-			- :open_file_folder: **CustomerJourney**
-				- :file_folder: **Css**
-				- :open_file_folder: **Javascript**
-					- :file_folder: **sugar7**
-			- :open_file_folder: **SugarObjects**
-				- :open_file_folder: **implements**
-					- :open_file_folder: **/customer_journey_parent**
-						- :file_folder: **clients**
-						- :file_folder: **Ext**
-						- :file_folder: **language**
-						- :clipboard: vardefs.php
-		- :open_file_folder: **src**
-			- :open_file_folder: **CustomerJourney**
-				- :open_file_folder: **Bean**
-					- :file_folder: **Activity**
-					- :file_folder: **ActivityTemplate**
-					- :file_folder: **Journey**
-					- :file_folder: **JourneyTemplate**
-					- :file_folder: **RSA**
-					- :file_folder: **Stage**
-					- :file_folder: **StageTemplate**
-					- :file_folder: **WebHook**
-					- :clipboard: CJBeanTrait.php
-					- :clipboard: ParseData.php
-					- :clipboard: Repository.php
-					- :clipboard: SelectToOption.php
-				- :open_file_folder: **Exception**
-					- :clipboard: BaseException.php
-					- :clipboard: InvalidLicenseException.php
-					- :clipboard: JourneyNotCompletedException.php
-					- :clipboard: NotFoundException.php
-					- :clipboard: ParentNotFoundException.php
-					- :clipboard: SameJourneyLimitReachException.php
-					- :clipboard: UserNotAuthorizedException.php
-				- :open_file_folder: **Hooks**
-					- :clipboard: ActivityOrStageTemplateImpl.php
-					- :clipboard: GeneralHooksImpl.php
-				- :open_file_folder: **ImportExport**
-					- :clipboard: TemplateExporter.php
-					- :clipboard: TemplateImporter.php
-				- :open_file_folder: **License**
-					- :clipboard: Config.php
-					- :clipboard: ConnectorHelper.php
-					- :clipboard: HeartbeatClient.php
-					- :clipboard: Validator.php
-					- :clipboard: version.php
-				- :file_folder: **SharedData**
-					- :clipboard: SharedData.php
-		- :file_folder: **themes**
-	- :open_file_folder: **CustomerJourney**
-		- :open_file_folder: **Command**
-			- :clipboard: ExportTemplatesCommand.php
-			- :clipboard: ExtractLanguageFilesCommand.php
-			- :clipboard: ImportTemplatesCommand.php
-			- :clipboard: TranslateCommand.php
-	- :open_file_folder: **modules**
-		- :file_folder: **CJ_Forms**
-		- :file_folder: **CJ_WebHooks**
-		- :file_folder: **DRI_SubWorkflow_Templates**
-		- :file_folder: **DRI_SubWorkflows**
-		- :file_folder: **DRI_Workflow_Task_Templates**
-		- :file_folder: **DRI_Workflow_Templates**
-		- :file_folder: **DRI_Workflows**
+- :file_folder: **config**
+- :open_file_folder: **custom / views**
+	- :file_folder: **base**
+	- :open_file_folder: **customer-journey** (**journey** **.js** controllers and **.hbs** files)
+		- :file_folder: **cj-detail-view** (**.hbs** files for the detail view)
+	- :file_folder: **detail-view**
+	- :file_folder: **edit-view**
+	- :file_folder: **main-menu**
 - :file_folder: **tests**
+
+# Developer Environment Standup
+
+* To setup the Mobile project:
+    [Mobile SDK Quick Start Guide](https://support.sugarcrm.com/Documentation/Mobile_Solutions/Mobile_SDK/Mobile_SDK_Quick_Start_Guide/)
+
+# Project Coding Standards
+
+Code guidelines are followed and JavaScript coding standards applied:
+[JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript)
+
+# Project Testing Standards
+
+Project functionalities are tested using the following frameworks:
+* Selenium [WebDriver](https://www.selenium.dev/documentation/webdriver/)
+* Mocha [mochajs](https://mochajs.org/)
+
+# Deployment
+
+Code is maintained on Git and is deployed on the servers.
